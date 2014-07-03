@@ -17,3 +17,20 @@ jboss/server/minimal/work/**/*
 # deployed package files #
 
 *.DEPLOYED
+
+# JDV files
+*.log
+*.vdb
+.metadata
+
+# Java class files
+# *.class
+
+# generated files
+bin/
+target/
+
+# Eclipse project files
+.classpath
+.project
+.settings*

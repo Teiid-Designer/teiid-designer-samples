@@ -1,4 +1,4 @@
-teiid-designer-quickstarts
+Teiid Designer Samples
 ==========================
 
-Quick starts for using Teiid Designer
+Quick start samples, document for using Teiid Designer.

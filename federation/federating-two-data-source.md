@@ -122,9 +122,7 @@ This should create a blank **PartsUnionView** Editor.
 
 The view is now ready to be linked to the text and xml source models. This is achieved by opening the **Transformation Diagram** for the **PartUnionView** model.
 
-* Double-click the **UnionTable** node to expand the **PartUnionView** Model Explorer. The transformation diagram editor should be opened:
-
-![Transform Sources](img/jdv-parts-union-transformation.png)
+* Double-click the **UnionTable** node to expand the **PartUnionView** Model Explorer. The transformation diagram editor should be opened.
 
 * In the Model Explorer, selecting the **PartsFlatFile** and **PartsXMLFile** enables the **Add Union Transformation Source(s)** button on the diagram toolbar. Click this button to add the two views as sources for the **UnionTable** as below:
 

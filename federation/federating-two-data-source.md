@@ -29,8 +29,8 @@ As below figure
 
 # Requirements
 
-* JBoss Data Virtualization 6.x installed and configured correctly, refer to [document](jdv-installation.md) for details
-* JBoss Developer Studio 7.x with JBoss Data Virtualization Development Tools installed and configured correctly, refer to [document](jdv-installation.md) for details
+* JBoss Data Virtualization 6.x installed and configured correctly, refer to [document](../installation/jdv-installation.md) for details
+* JBoss Developer Studio 7.x with JBoss Data Virtualization Development Tools installed and configured correctly, refer to [document](../installation/jdv-installation.md) for details
 
 # Preparing the Data
 

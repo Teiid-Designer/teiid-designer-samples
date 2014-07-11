@@ -11,7 +11,7 @@ This article presents the ability of Teiid Designer to import from DDL.
 
 # Preparing the Data
 
-The data sources to be fused consist of the following:
+The data sources to be used consist of the following:
 
 * [Teiid-MySQLAccounts.ddl](../metadata/Teiid-MySQLAccounts.ddl)
 

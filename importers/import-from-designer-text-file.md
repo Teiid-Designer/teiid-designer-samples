@@ -1,6 +1,6 @@
 # Overview
 
-This article presents the ability of Teiid Designer to import
+This article presents the ability of Teiid Designer to import Designer Text File to Source or View Models
 
 
 # Requirements
@@ -19,6 +19,10 @@ The files should be copied to a location where both are accessible by the Teiid 
 
 
 # Import Procedure 
+
+* On the Import Wizard select **Designer Text File >> Source or View Models** and click **Next>**
+
+* In **Select Import Type** page select *Relational Model(XML Format)*, 
 
 
 # Test

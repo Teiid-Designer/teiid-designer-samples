@@ -28,7 +28,7 @@ The file should be copied to a location where both are accessible by the Teiid i
 
 * In **File Import File Options** page select *Flat file on local file system*, click **Next>**
 
-* In **Data File Source Selection** page click **New...** button create *Marketdata* connection profile point to [marketdata.csv](../metadata/marketdata.csv) file, file name **MarketdataModel** as source model, select a location as below:
+* In **Data File Source Selection** page click **New...** button create *Marketdata* connection profile point to [marketdata.csv](../metadata/marketdata.csv) file, file name **MarketdataSource** as source model, select a location as below:
 
 ![import csv file](img/importer-flatfile-source-view.png)
 
@@ -55,7 +55,7 @@ SELECT
 
 * Select table `Marketdata` execute Preview Data, the [marketdata.csv](../metadata/marketdata.csv) will diplay in SQL Results.
 
-* Create VDB `Marketdata.vdb` with `MarketdataModel.xml`, deploy it to VDB, run [MarketdataClient](../jdbc-client/src/main/java/com/jboss/teiid/client/MarketdataClient.java) as java application, it should have the following output:
+* Create VDB `Marketdata.vdb` with `MarketdataModel.xml`, deploy it to JDV, run [MarketdataClient](../jdbc-client/src/main/java/com/jboss/teiid/client/MarketdataClient.java) as java application, it should have the following output:
 
 ~~~
 Query SQL: SELECT * FROM Marketdata

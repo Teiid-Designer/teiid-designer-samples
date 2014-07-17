@@ -22,6 +22,8 @@ The data sources to be used consist of the following:
 
 * In Import Wizard select **JDBC Database >> Source Model** and click **Next>**
 
+![Import Wizard](img/importer-wizard.png)
+
 * In **Select a JDBC source configuration** panel, click **New...** to create mysql connection profile `Products`, note that, this profile point to `products` use the following parameters
 
 | *Datanase* | *URL* | *Username* | *Password* |

@@ -26,6 +26,8 @@ The file should be copied to a location where both are accessible by the Teiid i
 
 * On the Import Wizard select **File Source (Flat) >> Source and View Model** and click **Next>**
 
+![Import Wizard](img/importer-wizard.png)
+
 * In **File Import File Options** page select *Flat file on local file system*, click **Next>**
 
 * In **Data File Source Selection** page click **New...** button create *Marketdata* connection profile point to [marketdata.csv](../metadata/marketdata.csv) file, file name **MarketdataSource** as source model, select a location as below:

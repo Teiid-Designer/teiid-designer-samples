@@ -29,6 +29,8 @@ The files should be copied to a location where both are accessible by the Teiid 
 
 * On the Import Wizard select **File Source (XML) >> Source and View Model** and click **Next>**
 
+![Import Wizard](img/importer-wizard.png)
+
 * In **XML Import File Options** page select *XML file on local file system*, click **Next>**
 
 * In **XML File Source Selection** page click **New...** button create **BooksConnection** connection profile point to [book.xml](../metadata/books.xml) file, file name **BooksSource** as source model, select a location as below: 

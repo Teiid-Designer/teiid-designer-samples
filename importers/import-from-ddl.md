@@ -22,6 +22,8 @@ The files should be copied to a location where both are accessible by the Teiid 
 
 * On the Import Wizard select **DDL File >> Source or View Model** and click **Next>**
 
+![Import Wizard](img/importer-wizard.png)
+
 * In **Provide DDL source** page, select the DDL file, Set the Model folder location, enter or select valid model name, set Model type (Source Model or View Model), set desired options and click **NEXT >**
 
 ![Source View](img/importer-ddl-source-view.png)

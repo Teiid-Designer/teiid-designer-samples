@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<vdb name="Portfolio" version="1">
+
+    <description>The Portfolio Dynamic VDB</description>
+
+    <property name="UseConnectorMetadata" value="true" />
+
+    <model name="MarketData">
+        <source name="text-connector" translator-name="file" connection-jndi-name="java:/marketdata-file"/>
+    </model>
+
+  <model name="Accounts">
+    <property name="importer.useFullSchemaName" value="false"/>
+    <source name="mysql-connector" translator-name="translator-mysql" connection-jndi-name="java:/accounts-ds"/>
+  </model>
+
+  <model name="Stocks" type="VIRTUAL">
+        <metadata type="DDL"><![CDATA[
+    CREATE VIEW Marketdata(
+      symbol string,
+      price bigdecimal
+    )
+      AS
+    SELECT
+        A.SYMBOL, A.PRICE
+    FROM
+      (EXEC MarketData.getTextFiles('marketdata.csv')) AS f, TEXTTABLE(f.file COLUMNS SYMBOL string, PRICE bigdecimal HEADER) AS A;
+
+    CREATE VIEW Stock(
+      product_id long,
+      symbol string,
+      price bigdecimal,
+      company_name   varchar(256)
+    )
+      AS
+    SELECT A.ID, S.symbol, S.price, A.COMPANY_NAME FROM Marketdata AS S, PRODUCT AS A WHERE S.symbol = A.SYMBOL;
+]]> </metadata>
+    </model>
+
+  <translator name="translator-mysql" type="mysql">
+    <property name="SupportsNativeQueries" value="true"/>
+  </translator>
+
+
+</vdb>

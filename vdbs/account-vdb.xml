@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<vdb name="Account" version="1">
+
+  <description>The Account VDB</description>
+
+  <property name="UseConnectorMetadata" value="true" />
+
+  <model name="Accounts">
+    <property name="importer.useFullSchemaName" value="false"/>
+    <source name="mysql-connector" translator-name="translator-mysql" connection-jndi-name="java:/accounts-ds"/>
+  </model>
+
+  <model name="Stocks" type="VIRTUAL">
+        <metadata type="DDL"><![CDATA[
+    CREATE VIEW Stock(
+      product_id long,
+      symbol string,
+      company_name   varchar(256)
+    )
+      AS
+    SELECT A.ID, A.SYMBOL, A.COMPANY_NAME FROM PRODUCT AS A
+]]> </metadata>
+    </model>
+
+  <translator name="translator-mysql" type="mysql">
+    <property name="SupportsNativeQueries" value="true"/>
+  </translator>
+
+
+</vdb>

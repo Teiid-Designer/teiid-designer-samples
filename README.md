@@ -12,7 +12,7 @@ This project contains quick start samples, documents for using Teiid Designer.
 ### Federation
 
 * [Example of Federating Two Data Sources](federation/federating-two-data-source.md)
-
+* [Example of Dynamic Data Federation](vdbs/dynamic-data-federation-example.md)
 
 ### Importers
 

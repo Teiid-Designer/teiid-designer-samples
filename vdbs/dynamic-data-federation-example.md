@@ -99,9 +99,9 @@ Account Information, stored in Mysql database which is referenced as the account
 
 We have executed [customer-schema.sql](../metadata/customer-schema.sql) against a exist database, it looks
 
-| *Datanase* | *Username* | *Password* |
+| *Database* | *Username* | *Password* |
 |------------|------------|------------|
-|products |jdv_user |jdv_pass |
+|customer |jdv_user |jdv_pass |
 
 We also can setup datasource via CLI commands ot edit the configuration file, refer to [this document](../metadata/mysql-datasource-install.md) for details
 
@@ -144,7 +144,7 @@ Due to the Run Federation VDB base on above `Run Marketdata VDB` and `Run Accoun
 
 ### Deploy VDB
 
-Copy both [portfolio-vdb.xml](portfolio-vdb.xml) and [marketdata-vdb.xml.dodeploy](marketdata-vdb.xml.dodeploy) to JDV_HOME/standalone/deployments, note the following line log hint it deployed success.
+Copy both [portfolio-vdb.xml](portfolio-vdb.xml) and [portfolio-vdb.xml.dodeploy](portfolio-vdb.xml.dodeploy) to JDV_HOME/standalone/deployments, note the following line log hint it deployed success.
 
 ~~~
 14:20:05,709 INFO  [org.teiid.RUNTIME] (teiid-async-threads - 4) TEIID40003 VDB Portfolio.1 is set to ACTIVE

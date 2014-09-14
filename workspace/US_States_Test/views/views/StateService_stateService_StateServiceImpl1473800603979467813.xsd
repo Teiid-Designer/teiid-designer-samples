@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="unqualified" targetNamespace="http://www.teiid.org/stateService/" version="1.0" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" xmlns:tns="http://www.teiid.org/stateService/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xs:element name="GetAllStateInfo" nillable="true" type="xs:anyType"/>
+<xs:element name="GetAllStateInfoResponse" nillable="true" type="xs:anyType"/>
+<xs:element name="GetStateInfo" nillable="true" type="xs:anyType"/>
+<xs:element name="GetStateInfoFault">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="GetStateInfoFault" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="GetStateInfoResponse" nillable="true" type="xs:anyType"/>
+<xs:complexType name="GetAllStateInfo">
+<xs:sequence/>
+</xs:complexType>
+<xs:complexType name="GetAllStateInfoResponse">
+<xs:sequence>
+<xs:element maxOccurs="unbounded" minOccurs="0" name="AllStateInfo" type="tns:StateInfo"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="StateInfo">
+<xs:sequence>
+<xs:element name="Name" type="xs:string"/>
+<xs:element name="Abbreviation" type="xs:string"/>
+<xs:element name="Capital" type="xs:string"/>
+<xs:element name="YearOfStatehood" type="xs:integer"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="GetStateInfo">
+<xs:sequence>
+<xs:element minOccurs="0" name="stateCode" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="GetStateInfoResponse">
+<xs:sequence>
+<xs:element minOccurs="0" name="StateInfo" type="tns:StateInfo"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

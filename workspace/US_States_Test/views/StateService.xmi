@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:diagram="http://www.metamatrix.com/metamodels/Diagram" xmlns:mmcore="http://www.metamatrix.com/metamodels/Core" xmlns:mmws="http://www.metamatrix.com/metamodels/WebService" xmlns:transformation="http://www.metamatrix.com/metamodels/Transformation">
+  <mmcore:ModelAnnotation xmi:uuid="mmuuid:3e42d097-d255-423a-b170-9eb7197c4ac5" primaryMetamodelUri="http://www.metamatrix.com/metamodels/WebService" modelType="VIRTUAL" ProducerName="Teiid Designer" ProducerVersion="8.3.3.Final-v20140613-1202-B88">
+    <modelImports xmi:uuid="mmuuid:f2523dd4-bf97-48c7-93ad-216fd53856c5" name="StateServiceResponses" modelLocation="StateServiceResponses.xmi" uuid="mmuuid:5338a86f-e2cb-46d2-82f5-b75e8fdf5b70" modelType="VIRTUAL" primaryMetamodelUri="http://www.metamatrix.com/metamodels/XmlDocument"/>
+    <modelImports xmi:uuid="mmuuid:7479d844-83e5-40a9-b6ab-c5e9260d9e96" name="StateService_stateService_StateServiceImpl1473800603979467813" modelLocation="views/StateService_stateService_StateServiceImpl1473800603979467813.xsd" modelType="TYPE" primaryMetamodelUri="http://www.eclipse.org/xsd/2002/XSD"/>
+  </mmcore:ModelAnnotation>
+  <mmws:Interface xmi:uuid="mmuuid:4e37a119-91ce-4c5e-b070-b05a4cd6e2c7" name="stateService">
+    <operations xmi:uuid="mmuuid:c0824eb2-5bf7-4b2f-b38a-790cb1937842" name="GetAllStateInfo">
+      <input xmi:uuid="mmuuid:d380e331-70ef-4d7d-8dea-fd0723040d92" name="GetAllStateInfo">
+        <contentElement href="views/StateService_stateService_StateServiceImpl1473800603979467813.xsd#//GetAllStateInfo;XSDElementDeclaration"/>
+      </input>
+      <output xmi:uuid="mmuuid:72729139-c4ea-4c8b-8f0a-915ad13ed784" name="GetAllStateInfoResponse">
+        <contentElement href="views/StateService_stateService_StateServiceImpl1473800603979467813.xsd#//GetAllStateInfoResponse;XSDElementDeclaration=1"/>
+        <samples xmi:uuid="mmuuid:c368e17b-fb31-4867-8a8a-1a477530b326"/>
+        <xmlDocument href="StateServiceResponses.xmi#mmuuid/53a43a66-3e3e-4898-9bef-7eefc7e74525"/>
+      </output>
+    </operations>
+    <operations xmi:uuid="mmuuid:f35131f5-0597-40e7-bcd4-d37143fb45b0" name="GetStateInfo">
+      <input xmi:uuid="mmuuid:1ecbdf84-6465-45cf-86e0-ce2e860b0368" name="GetStateInfo">
+        <contentElement href="views/StateService_stateService_StateServiceImpl1473800603979467813.xsd#//GetStateInfo;XSDElementDeclaration=2"/>
+      </input>
+      <output xmi:uuid="mmuuid:df681554-fee9-4164-98e7-e733268bda23" name="GetStateInfoResponse">
+        <contentElement href="views/StateService_stateService_StateServiceImpl1473800603979467813.xsd#//GetStateInfoResponse;XSDElementDeclaration=4"/>
+        <samples xmi:uuid="mmuuid:dca8b9f0-913a-431b-8748-5dc0615f7598"/>
+        <xmlDocument href="StateServiceResponses.xmi#mmuuid/19bd18dc-3df7-4a98-943d-ceaa9a41699d"/>
+      </output>
+    </operations>
+  </mmws:Interface>
+  <transformation:TransformationContainer xmi:uuid="mmuuid:ee5b1519-6b9d-4d78-ba5d-6dfe35a262bc">
+    <transformationMappings xsi:type="transformation:SqlTransformationMappingRoot" xmi:uuid="mmuuid:e25e0ca7-6af1-4f2a-b27b-cabcdbfe635e" outputs="mmuuid/c0824eb2-5bf7-4b2f-b38a-790cb1937842" target="mmuuid/c0824eb2-5bf7-4b2f-b38a-790cb1937842">
+      <helper xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:4b1ba457-1b12-4cee-85fc-8b0de0a982e8">
+        <nested xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:10ff9128-9751-4450-b4b3-b6660a194e39" selectSql="CREATE VIRTUAL PROCEDURE BEGIN DECLARE string VARIABLES.IN_GetAllStateInfo; VARIABLES.IN_GetAllStateInfo = xpathValue(StateService.stateService.GetAllStateInfo.GetAllStateInfo,'/*:GetAllStateInfo'); SELECT * FROM StateServiceResponses.stateService_GetAllStateInfo_GetAllStateInfoResponse WHERE StateServiceResponses.stateService_GetAllStateInfo_GetAllStateInfoResponse.REPLACE_WITH_ELEMENT_OR_COLUMN = VARIABLES.IN_GetAllStateInfo ; END"/>
+      </helper>
+      <inputs href="StateServiceResponses.xmi#mmuuid/53a43a66-3e3e-4898-9bef-7eefc7e74525"/>
+    </transformationMappings>
+    <transformationMappings xsi:type="transformation:SqlTransformationMappingRoot" xmi:uuid="mmuuid:d52cddc5-5cb4-4a00-bdc6-a19e28801f5e" outputs="mmuuid/f35131f5-0597-40e7-bcd4-d37143fb45b0" target="mmuuid/f35131f5-0597-40e7-bcd4-d37143fb45b0">
+      <helper xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:c5edea6b-4817-4c88-ab11-4543517a2dec">
+        <nested xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:09ea25b6-aa77-48b2-b1cb-318c2f7e347e" selectSql="CREATE VIRTUAL PROCEDURE BEGIN DECLARE string VARIABLES.IN_GetStateInfo; VARIABLES.IN_GetStateInfo = xpathValue(StateService.stateService.GetStateInfo.GetStateInfo,'/*:GetStateInfo'); SELECT * FROM StateServiceResponses.stateService_GetStateInfo_GetStateInfoResponse WHERE StateServiceResponses.stateService_GetStateInfo_GetStateInfoResponse.REPLACE_WITH_ELEMENT_OR_COLUMN = VARIABLES.IN_GetStateInfo ; END"/>
+      </helper>
+      <inputs href="StateServiceResponses.xmi#mmuuid/19bd18dc-3df7-4a98-943d-ceaa9a41699d"/>
+    </transformationMappings>
+  </transformation:TransformationContainer>
+  <mmcore:AnnotationContainer xmi:uuid="mmuuid:eebf09c1-9eac-4548-a56e-2e5a801981e9"/>
+  <diagram:DiagramContainer xmi:uuid="mmuuid:85c6d462-b239-4f53-9910-b654e2089914">
+    <diagram xmi:uuid="mmuuid:60df84c9-556c-4083-969f-f4af7b3bec1e" type="packageDiagramType" target="mmuuid/3e42d097-d255-423a-b170-9eb7197c4ac5">
+      <diagramEntity xmi:uuid="mmuuid:ecd420a4-d7c6-436d-bb96-fc34e08e625a" modelObject="mmuuid/4e37a119-91ce-4c5e-b070-b05a4cd6e2c7" xPosition="10" yPosition="10"/>
+    </diagram>
+    <diagram xmi:uuid="mmuuid:1742fef1-33cc-4fec-b97d-c19073ed5de9" type="packageDiagramType" target="mmuuid/4e37a119-91ce-4c5e-b070-b05a4cd6e2c7">
+      <diagramEntity xmi:uuid="mmuuid:6bffafef-7bf4-4a1e-91e8-f91cac571e45" modelObject="mmuuid/c0824eb2-5bf7-4b2f-b38a-790cb1937842" xPosition="10" yPosition="10"/>
+      <diagramEntity xmi:uuid="mmuuid:c7caef49-a409-41ed-a04d-78146d9ed011" modelObject="mmuuid/f35131f5-0597-40e7-bcd4-d37143fb45b0" xPosition="315" yPosition="10"/>
+    </diagram>
+  </diagram:DiagramContainer>
+</xmi:XMI>

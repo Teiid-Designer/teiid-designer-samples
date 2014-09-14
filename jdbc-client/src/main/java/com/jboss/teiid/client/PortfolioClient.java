@@ -9,7 +9,7 @@ public class PortfolioClient {
 	private static final String JDBC_DRIVER = "org.teiid.jdbc.TeiidDriver";
 	private static final String JDBC_URL = "jdbc:teiid:Portfolio@mm://localhost:31000;version=1";
 	private static final String JDBC_USER = "user";
-	private static final String JDBC_PASS = "user";
+	private static final String JDBC_PASS = "password1!";
 	
 	private static final String SQL_QUERY_MARKETDATA= "SELECT * FROM Marketdata" ;
 	private static final String SQL_QUERY_PRODUCT= "SELECT * FROM PRODUCT" ;

@@ -4,11 +4,11 @@ This article provides instructions for installing and launching the VDB Builder 
 
 ### Installation options
 
-To install the VDB Builder cli, you can
-- Build latest source
-- Download a pre-built kit
+To install the VDB Builder cli, you have two options:
+1. Build latest source
+2. Download a pre-built kit
 
-### Build latest source
+### 1. Build latest source
 
 To build a kit from the latest source:
 
@@ -22,7 +22,7 @@ To build a kit from the latest source:
 
 ![CLI startup](img/cli-startup.png)
 
-### Download a pre-build kit
+### 2. Download a pre-build kit
 
 A pre-built zip file is also included in this directory - if you want to skip the download and build steps above.
 

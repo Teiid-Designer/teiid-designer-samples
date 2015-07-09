@@ -14,16 +14,16 @@ Remember, you can use __tab completion__ to see the available commands and sub-c
 
 Try importing these dynamic VDBs, which are a bit more complex than the previous examples.
 
-[example1-vdb.xml](files/example1-vdb.xml)
-[BQTExample-vdb.xml](files/BQTExample-vdb.xml)
+- [example1-vdb.xml](files/example1-vdb.xml)
+- [BQTExample-vdb.xml](files/BQTExample-vdb.xml)
 
 
 ### Command files
 
 The following command files provide more examples of scripting VDB creation.
 
-[commandExample1.txt](files/commandExample1.txt)
-[commandExample2.txt](files/commandExample2.txt)
+- [commandExample1.txt](files/commandExample1.txt)
+- [commandExample2.txt](files/commandExample2.txt)
 
 
 

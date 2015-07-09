@@ -1,36 +1,31 @@
-# Overview
+### Overview
 
-This article shows how to use the VDB Builder cli to execute a command script.
+This article shows how to use the VDB Builder cli to execute a previously saved session command file.  You can create or edit existing command files to fully script the construction of your VDBs!  Use this sample as a starting point for working with your own VDBS.
 
-
-# Requirements
-
-* VDB Builder cli installed - refer to [installation instructions] (install-cli.md) for details
+Remember, you can use __tab completion__ to see the available commands and sub-command options, or use __help command__ to see command details.
 
 
-# Preparing the Data
+### Requirements
 
-The data sources to be used consist of the following:
-
-* [Teiid-MySQLAccounts.ddl](../metadata/Teiid-MySQLAccounts.ddl)
-
-The files should be copied to a location where both are accessible by the Teiid installation, eg. /usr/share/teiid.
+* VDB Builder cli installed - refer to the [Installation Instructions](install-cli.md) for details
 
 
-# Import Procedure 
+### Execute a command file
 
-* On the Import Wizard select **DDL File >> Source or View Model** and click **Next>**
+The image below shows our command file (mySession.txt).
 
-![Import Wizard](img/importer-wizard.png)
+![Command File](img/cli-record-command-file2.png)
 
-* In **Provide DDL source** page, select the DDL file, Set the Model folder location, enter or select valid model name, set Model type (Source Model or View Model), set desired options and click **NEXT >**
+---
+To execute the command file, you have 2 options:
 
-![Source View](img/importer-ddl-source-view.png)
+#### Play file in interactive mode.  
+Below is a session that shows the playback in interactive mode.  __(Do not add `exit` at end of script file)__
 
-* In **Select the Differences to Apply** page, a difference report is presented for viewing or deselecting individual relational entities. Click **Finish** to complete.
+![Playback interactive](img/cli-record-playback-interactive.png)
 
-![Objects to create](img/importer-ddl-object-to-create.png)
+#### Execute the file from command line 
+You can execute the file from the VDB Builder launch command, using the __-f__ option, as shown below.  __(Add `exit` at end of script file)__
 
-> Note, **Modeling -> Set Connection Profile** is necessary for Preview Data
+![Playback terminal](img/cli-record-playback-terminal.png)
 
-# Test

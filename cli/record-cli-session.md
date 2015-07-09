@@ -1,36 +1,42 @@
-# Overview
+### Overview
 
-This article shows how you can use the VDB Builder cli to record session commands, then play them back later.
+This article shows how to use the VDB Builder cli to record your session commands for later playback.  You can use the command file to fully script the construction of your VDBs!  Use this sample as a starting point for working with your own VDBS.
 
-
-# Requirements
-
-* VDB Builder cli installed - refer to [installation instructions] (install-cli.md) for details
+Remember, you can use __tab completion__ to see the available commands and sub-command options, or use __help command__ to see command details.
 
 
-# Preparing the Data
+### Requirements
 
-The data sources to be used consist of the following:
-
-* [Teiid-MySQLAccounts.ddl](../metadata/Teiid-MySQLAccounts.ddl)
-
-The files should be copied to a location where both are accessible by the Teiid installation, eg. /usr/share/teiid.
+* VDB Builder cli installed - refer to the [Installation Instructions](install-cli.md) for details
 
 
-# Import Procedure 
+### Record a session
 
-* On the Import Wizard select **DDL File >> Source or View Model** and click **Next>**
+The sample session below shows how to record session commands in VDB Builder.  As shown, the recording output is saved to a file specified in the VDB Builder global properties (RECORDING_FILE).  In this example, our output is written to __./mySession.txt__
 
-![Import Wizard](img/importer-wizard.png)
+![Import VDB Session](img/cli-record-session.png)
 
-* In **Provide DDL source** page, select the DDL file, Set the Model folder location, enter or select valid model name, set Model type (Source Model or View Model), set desired options and click **NEXT >**
+---
+Here is a summary of the commands used for the above session:
 
-![Source View](img/importer-ddl-source-view.png)
+* __`list`__ - shows all children at the cli workspace context.  Our workspace initially contains no VDBs.
+* __`show global`__ - shows the VDB Builder global constants.  One of the constants specifies the recording output file (RECORDING_FILE)
+* __`set global RECORDING_FILE ./mySession.txt`__ - changes the file where our session commands will be saved.
+* __`set record on`__ - starts 'recording' all subsequent commands 
+* __`create vdb SampleVDB`__ - create VDB __SampleVDB__ 
+* __`cd SampleVDB`__ - 'navigates' down into __SampleVDB__ 
+* __`create model Model1`__ - create Model __Model1__ 
+* __`cd Model1`__ - 'navigates' down into __Model1__ 
+* __`create table Table1`__ - create table __Table1__ 
+* __`cd Table1`__ - 'navigates' down into __Table1__ 
+* __`create column Col1`__ - create column __Col1__ 
+* __`create column Col2`__ - create column __Col2__ 
+* __`home`__ - navigates to the __workspace__ root context.
+* __`set record off`__ - stop recording commands 
 
-* In **Select the Differences to Apply** page, a difference report is presented for viewing or deselecting individual relational entities. Click **Finish** to complete.
+---
 
-![Objects to create](img/importer-ddl-object-to-create.png)
+The image below shows what our recording file (mySession.txt) looks like.  (I have commented out the `set record on` line)
 
-> Note, **Modeling -> Set Connection Profile** is necessary for Preview Data
+![Command File](img/cli-record-command-file.png)
 
-# Test

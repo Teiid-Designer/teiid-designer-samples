@@ -1,13 +1,13 @@
-### Overview
+### Import and edit a VDB
 
-This article shows how to use the VDB Builder cli to import and edit a VDB interactively.  Use this sample as a starting point for working with your own VDBS.
+This sample shows how to use the VDB Builder cli to import and edit a VDB interactively.  Use this sample as a starting point for working with your own VDBS.
 
-Remember, you can use __tab completion__ to see the available commands and sub-command options, or use __help command__ to see command details.
+Remember, you can use __tab completion__ to see the available commands and sub-command options, or use __help__ to see command details.
 
 
 ### Requirements
 
-* VDB Builder cli installed - refer to the [Installation Instructions](install-cli.md) for details
+* Install VDB Builder cli - refer to the [Installation Instructions](install-cli.md) for details
 
 
 ### Import a VDB

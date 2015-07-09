@@ -23,8 +23,9 @@ This project contains quick start samples and documents for using Teiid Designer
 #### VDB Builder command line interface (cli)
 
 * [Install VDB Builder](cli/install-cli.md)
-* [Create a new VDB interactively](cli/create-vdb.md)
+* [Create a VDB interactively](cli/create-vdb.md)
 * [Import and edit a VDB](cli/import-edit-vdb.md)
 * [Record session commands to a file](cli/record-cli-session.md)
-* [Execute a command script](cli/execute-command-script.md)
+* [Execute a command file](cli/execute-command-script.md)
+* [More cli examples](cli/more-examples.md)
 

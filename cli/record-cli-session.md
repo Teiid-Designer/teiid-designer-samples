@@ -1,18 +1,18 @@
-### Overview
+### Record session commands to a file
 
-This article shows how to use the VDB Builder cli to record your session commands for later playback.  You can use the command file to fully script the construction of your VDBs!  Use this sample as a starting point for working with your own VDBS.
+This sample shows how to use the VDB Builder cli to record your session commands for later playback.  You can use the command file to fully script the construction of your VDBs!  Use this sample as a starting point for working with your own VDBS.
 
-Remember, you can use __tab completion__ to see the available commands and sub-command options, or use __help command__ to see command details.
+Remember, you can use __tab completion__ to see the available commands and sub-command options, or use __help__ to see command details.
 
 
 ### Requirements
 
-* VDB Builder cli installed - refer to the [Installation Instructions](install-cli.md) for details
+* Install VDB Builder cli - refer to the [Installation Instructions](install-cli.md) for details
 
 
 ### Record a session
 
-The sample session below shows how to record session commands in VDB Builder.  As shown, the recording output is saved to a file specified in the VDB Builder global properties (RECORDING_FILE).  In this example, our output is written to __./mySession.txt__
+The session below shows how to record session commands in VDB Builder.  The recording output is saved to a file specified in the VDB Builder global properties (RECORDING_FILE).  In the session below, our output is written to __./mySession.txt__
 
 ![Import VDB Session](img/cli-record-session.png)
 

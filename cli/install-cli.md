@@ -1,4 +1,4 @@
-### Overview
+### Install VDB Builder
 
 This article provides instructions for installing and launching the VDB Builder command line interface (cli).
 
@@ -18,7 +18,7 @@ To build a kit from the latest source:
 
 3. Copy the VDB Builder zip file into a new folder on your file system, and extract it.
 
-4. Open a terminal window at the install folder, then at the command prompt enter __$ ./vdbbuilder.sh__ - as shown below
+4. Open a terminal window at the install folder, then at the command prompt enter __`$ ./vdbbuilder.sh`__ - as shown below
 
 ![CLI startup](img/cli-startup.png)
 
@@ -26,9 +26,9 @@ To build a kit from the latest source:
 
 A pre-built zip file is also included in this directory - if you want to skip the download and build steps above.
 
-1. Download the [VDB Builder zip](vdbbuilder.build-0.0.1-SNAPSHOT-vdbbuilder-console.zip)
+1. Download the [VDB Builder zip](files/vdbbuilder.build-0.0.1-SNAPSHOT-vdbbuilder-console.zip)
 
 2. Copy the VDB Builder zip file into a folder on your file system and extract it.
 
-3. Open a terminal window at the install folder, then at the command prompt enter __$ ./vdbbuilder.sh__ 
+3. Open a terminal window at the install folder, then at the command prompt enter __`$ ./vdbbuilder.sh`__ 
 

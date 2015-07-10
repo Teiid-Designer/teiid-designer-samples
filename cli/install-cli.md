@@ -24,9 +24,9 @@ To build a kit from the latest source:
 
 ### 2. Download a pre-build kit
 
-A pre-built zip file is also included in this directory - if you want to skip the download and build steps above.
+A pre-built zip file is also available on sourceforge :
 
-1. Download the [VDB Builder zip](files/vdbbuilder.build-0.0.1-SNAPSHOT-vdbbuilder-console.zip)
+1. Download the [VDB Builder zip](http://sourceforge.net/projects/teiid/files/vdb-builder/0.x%20Releases/vdbbuilder-console-0.0.1-20150709.zip/download)
 
 2. Copy the VDB Builder zip file into a folder on your file system and extract it.
 

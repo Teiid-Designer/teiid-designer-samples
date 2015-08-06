@@ -1,6 +1,6 @@
-### More cli examples
+### More cli examples and test files
 
-On this page we will provide a few more example script files and VDB files that you can try.  They go a bit further in complexity than the previous simple examples.  We will continue to add more examples to this page as they are developed.
+On this page we will provide a few more example script files, DDL files and VDB files that you can try.  They go a bit further in complexity than the previous simple examples.  We will continue to add more examples to this page as they are developed.
 
 Remember, you can use __tab completion__ to see the available commands and sub-command options, or use __help__ to see command details.
 
@@ -18,6 +18,12 @@ Try importing these dynamic VDBs, which are a bit more complex than the previous
 - [example1-vdb.xml](files/example1-vdb.xml)
 - [BQTExample-vdb.xml](files/BQTExample-vdb.xml)
 
+### DDL Files
+
+Try DDL import using these files
+
+- [Teiid-MySQLAccounts.ddl](files/Teiid-MySQLAccounts.ddl)
+- [Teiid-FlatFile.ddl](files/Teiid-FlatFile.ddl)
 
 ### Command files
 

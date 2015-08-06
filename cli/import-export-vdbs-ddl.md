@@ -17,8 +17,8 @@ The sample session below shows how to import and export a dynamic VDB.  The sess
 ![Import-Export VDB Session](img/cli-import-export-VDB.png)
 
 ---
-* __` import vdb <vdbFile> [parentObject] `__ - imports VDB from __"vdbFile"__ into the workspace
-* __` export vdb PartsVDB <vdbFile> `__ - exports __PartsVDB__ to the specified file __"vdbFile"__
+* __``` import vdb <vdbFile> [parentObject] ```__ - imports VDB from __"vdbFile"__ into the workspace
+* __``` export vdb PartsVDB <vdbFile> ```__ - exports __PartsVDB__ to the specified file __"vdbFile"__
 ---
 
 ### Import and Export DDL
@@ -28,7 +28,7 @@ The sample session below shows how to import and export DDL.  The session shows 
 ![Import-Export DDL Session](img/cli-import-export-DDL.png)
 
 ---
-* __` import ddl <ddlFile> [parentObject] `__ - imports DDL from __ddlFile__ into __"parentObject"__
-* __` export ddl Model1 <ddlFile> `__ - exports __Model1__ content to a DDL file __ddlFile__
+* __``` import ddl <ddlFile> [parentObject] ```__ - imports DDL from __ddlFile__ into __"parentObject"__
+* __``` export ddl Model1 <ddlFile> ```__ - exports __Model1__ content to a DDL file __ddlFile__
 ---
 

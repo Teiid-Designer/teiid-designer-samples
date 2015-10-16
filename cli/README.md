@@ -1,6 +1,6 @@
-## Command Line Interface (cli)
+## VDB Builder >>> Command Line Interface (cli)
 
-The __VDB Builder__ provides a command line interface which allows the user to create and edit VDBs from the command line.
+The __VDB Builder__ provides a command line interface which allows the user to create and edit VDBs from the command line. This capability allows users to fully script the creation, editing and deployment of their Teiid artifacts.
 
 The following samples will help you get started using the VDB Builder cli:
 

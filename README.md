@@ -7,7 +7,6 @@ This project contains quick start samples and documents for using Teiid Designer
 
 * [Install Red Hat JBoss Data Virtualization](installation/jdv-installation.md)
 * [Install Red Hat JBoss Developer Studio](installation/jbds-installation.md)
-* [Install VDB Builder](cli/install-cli.md)
 
 #### Federation
 

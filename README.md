@@ -21,13 +21,3 @@ This project contains quick start samples and documents for using Teiid Designer
 * [Import From XML File Source](importers/import-from-xml-file-source.md)
 * [Import From JDBC Database](importers/import-from-jdbc-database.md)
 
-#### VDB Builder command line interface (cli)
-
-* [Install VDB Builder](cli/install-cli.md)
-* [Create a VDB interactively](cli/create-vdb.md)
-* [Import and edit a VDB](cli/import-edit-vdb.md)
-* [Import and Export VDBs and DDL](cli/import-export-vdbs-ddl.md)
-* [Record session commands to a file](cli/record-cli-session.md)
-* [Execute a command file](cli/execute-command-script.md)
-* [More cli examples and test files](cli/more-examples.md)
-
